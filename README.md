@@ -39,6 +39,21 @@ Upgrading to a new version of React Native requires updating the `react-native`,
 
 If Yarn was installed when the project was initialized, then dependencies will have been installed via Yarn, and you should probably use it to run these commands as well. Unlike dependency installation, command running syntax is identical for Yarn and NPM at the time of this writing.
 
+## Initial Setup
+
+To enable PubNub's backend functionality, please ensure you've set the Publish and Subscribe keys at: `chat-engine-mobile-basic/components/chat/config.js`
+
+```javascript
+// WARNING: Add publish/subscribe keys below to enable example functionality
+const YOUR_PUBLISH_KEY = '';
+const YOUR_SUBSCRIBE_KEY = '';
+
+// just making sure you're paying attention
+if (YOUR_PUBLISH_KEY === '' || YOUR_SUBSCRIBE_KEY === 0) {
+    alert('You forgot to enter your keys');
+}
+```
+
 ### `npm start`
 
 Runs your app in development mode.
